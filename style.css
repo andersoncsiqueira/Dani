@@ -1,0 +1,65 @@
+
+body {
+    background: #FCD5D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: block;
+    width: 400px;
+}
+
+table {
+    background: white;
+    margin: 50px 32.5px 50px 32.5px;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
+}
+
+tr {
+    width: 25px;
+    height: 25px;
+}
+
+th {
+    width: 25px;
+    height: 25px;
+}
+
+ th, tr {
+    
+    border: solid black 1px;
+}
+
+h1 {
+    margin: 5px;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px;
+    text-align: center;
+}
+
+.stars {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars img {
+    margin: 0px 15px 0px 15px;
+}
+
+.select {
+   
+}
+
+.selectClick {
+    background: red;
+    color: white;
+    font-weight: bold;
+}
