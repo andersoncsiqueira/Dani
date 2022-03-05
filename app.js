@@ -7,6 +7,12 @@ let imgGostosa = document.querySelector('#gostosa')
 let imgGostosa2 = document.querySelector('#gostosa2')
 let imgLinda = document.querySelector('#linda')
 let imgLinda2 = document.querySelector('#linda2')
+let imgCheirosa = document.querySelector('#cheirosa')
+let imgCheirosa2 = document.querySelector('#cheirosa2')
+let imgDelicia = document.querySelector('#delicia')
+let imgDelicia2 = document.querySelector('#delicia2')
+let imgCarinhosa = document.querySelector('#carinhosa')
+let imgCarinhosa2 = document.querySelector('#carinhosa2')
 
 let clicked = Array.from(lettle)
 .filter(clike => clike.classList.contains('select'))
@@ -38,6 +44,9 @@ let img = Array.from(lettle)
 img(amorTH,imgAmor,imgAmor2,'amor')
 img(amorTH,imgGostosa,imgGostosa2,'gostosa')
 img(amorTH,imgLinda,imgLinda2,'linda')
+img(amorTH,imgCheirosa, imgCheirosa2, 'cheirosa')
+img(amorTH,imgDelicia, imgDelicia2, 'delicia')
+img(amorTH,imgCarinhosa, imgCarinhosa2, 'carinhosa')
   
                        
                        
