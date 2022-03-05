@@ -43,6 +43,12 @@ h3 {
     text-align: center;
 }
 
+
+
+
+
+                        /* classes */ 
+
 .stars {
     margin-top: 20px;
     display: flex;
@@ -52,6 +58,8 @@ h3 {
 
 .stars img {
     margin: 0px 15px 0px 15px;
+    width: 60px;
+    height: 60px;
 }
 
 .select {
@@ -62,4 +70,12 @@ h3 {
     background: red;
     color: white;
     font-weight: bold;
+}
+
+.img-off {
+    display: none;
+}
+
+#linda2 {
+    border-radius: 30px;
 }
