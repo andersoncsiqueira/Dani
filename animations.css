@@ -35,8 +35,35 @@
        position: absolute;
        width: 312px;
        height: 337px;
-       transition: transform 3.5s;
-       transform-origin: bottom;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+   }
+
+   .botoes {
+       display: block;
+   }
+
+   .botoes span {
+       margin: 60px;
+       background-color: beige;
+       padding: 5px;
+   }
+
+   .botoes div {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 10px;
+       
+   }
+
+   .botoes button {
+       margin: 5px;
+       height: 25px;
+       font-size: 15px;
+       padding: 5px 5px 5px 5px ;
    }
    
    #baloes {
