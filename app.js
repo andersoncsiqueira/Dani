@@ -1,5 +1,5 @@
 let lettle = document.querySelectorAll('th')
-let amorTH = document.querySelectorAll('th')
+let ths = document.querySelectorAll('th')
 
 let imgAmor = document.querySelector('#amor')
 let imgAmor2 = document.querySelector('#amor2')
@@ -13,6 +13,12 @@ let imgDelicia = document.querySelector('#delicia')
 let imgDelicia2 = document.querySelector('#delicia2')
 let imgCarinhosa = document.querySelector('#carinhosa')
 let imgCarinhosa2 = document.querySelector('#carinhosa2')
+let imgInteligente = document.querySelector('#inteligente')
+let imgInteligente2 = document.querySelector('#inteligente2')
+let imgCenoura = document.querySelector('#cenoura')
+let imgCenoura2 = document.querySelector('#cenoura2')
+let imgPerfeita = document.querySelector('#perfeita')
+let imgPerfeita2 = document.querySelector('#perfeita2')
 
 let clicked = Array.from(lettle)
 .filter(clike => clike.classList.contains('select'))
@@ -40,29 +46,16 @@ let img = Array.from(lettle)
   })
   })
 }
-
-img(amorTH,imgAmor,imgAmor2,'amor')
-img(amorTH,imgGostosa,imgGostosa2,'gostosa')
-img(amorTH,imgLinda,imgLinda2,'linda')
-img(amorTH,imgCheirosa, imgCheirosa2, 'cheirosa')
-img(amorTH,imgDelicia, imgDelicia2, 'delicia')
-img(amorTH,imgCarinhosa, imgCarinhosa2, 'carinhosa')
+img(ths,imgAmor,imgAmor2,'amor')
+img(ths,imgGostosa,imgGostosa2,'gostosa')
+img(ths,imgLinda,imgLinda2,'linda')
+img(ths,imgCheirosa, imgCheirosa2, 'cheirosa')
+img(ths,imgDelicia, imgDelicia2, 'delicia')
+img(ths,imgCarinhosa, imgCarinhosa2, 'carinhosa')
+img(ths,imgInteligente, imgInteligente2, 'inteligente')
+img(ths,imgCenoura, imgCenoura2, 'cenoura')
+img(ths,imgPerfeita, imgPerfeita2, 'perfeita')
   
                        
                        
-// amor
-/*let contAmor = 0
-let amor = Array.from(amorTH)
-.filter(amor => amor.classList.contains('amor')).forEach(amor => {
-     amor.addEventListener('click', event => {
-        amor.classList.add('amor-icon')
-        contAmor += 1
-        if(contAmor >3) {
-            imgAmor.classList.add('amor-off')
-            imgAmor2.classList.remove('amor-off')
-        }
-})
-})*/
-
-// hot 
 
