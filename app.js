@@ -20,6 +20,11 @@ let imgCenoura2 = document.querySelector('#cenoura2')
 let imgPerfeita = document.querySelector('#perfeita')
 let imgPerfeita2 = document.querySelector('#perfeita2')
 
+let table = document.querySelector('table')
+let show = document.querySelector('#show')
+const baloesAll = document.querySelectorAll('.baloesAll')
+
+let counter = 0
 let clicked = Array.from(lettle)
 .filter(clike => clike.classList.contains('select'))
 .forEach(click => {
@@ -28,12 +33,18 @@ let clicked = Array.from(lettle)
     })
 })
 
+
+
                        //      icones // 
+
+ 
+                      
 
 const img = (lettle,img1,img2,classImg) => {
 
 let contImg = 1
-  
+
+
 let img = Array.from(lettle)
   .filter(amor => amor.classList.contains(`${classImg}`)).forEach(amor => {
        amor.addEventListener('click', event => {
@@ -42,9 +53,12 @@ let img = Array.from(lettle)
           if(contImg > classImg.length) {
               img1.classList.add('img-off')
               img2.classList.remove('img-off')
+              
           }
+        
   })
   })
+  
 }
 img(ths,imgAmor,imgAmor2,'amor')
 img(ths,imgGostosa,imgGostosa2,'gostosa')
@@ -57,5 +71,24 @@ img(ths,imgCenoura, imgCenoura2, 'cenoura')
 img(ths,imgPerfeita, imgPerfeita2, 'perfeita')
   
                        
-                       
+                       // animations //
+
+
+
+const settime = setInterval(()=>{
+    
+    let clicado = Array.from(lettle).filter(item => item.classList.contains('selectClick'))
+    
+    if(clicado.length === 3 ) {
+        clearInterval(settime)
+        table.classList.toggle('img-off')
+        show.classList.toggle('img-off')
+        show.classList.toggle('show')
+        show.classList.add('showAnimation')        
+    }
+
+},1)
+
+
+
 
