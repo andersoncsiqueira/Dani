@@ -17,6 +17,107 @@ table {
     border-collapse: collapse;
     box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
 }
+                                    /* show */
+.show {
+    display: flex;
+    width: 312px;
+    height: 337px;
+    margin: 50px 32.5px 50px 32.5px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
+    
+}
+
+.door-left {
+    background-image: url('Imagens/quadro-half-left.png');
+    background-repeat: round;
+    width: 156px;
+    height: 337px;
+    transition: transform 2.5s;
+    transform-origin: left;
+    z-index: 1;
+}
+
+.door-right {
+    background-image: url('Imagens/quadro-half-right.png');
+    background-repeat: round;
+    width: 156px;
+    height: 337px;
+    transition: transform 2.5s;
+    transform-origin: right;
+    z-index: 1;
+}
+
+.contain-baloes {
+    position: absolute;
+    width: 312px;
+    height: 337px;
+}
+
+#baloes {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes1 {
+    position: absolute;
+    left: 90px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes2 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes3 {
+    position: absolute;
+    left: 160px;
+    top: 165px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes4 {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes5 {
+    position: absolute;
+    left: 125px;
+    top: 155px;
+    width: 150px;
+    height: 150px;
+}
+
+#baloes6 {
+    position: absolute;
+    left: 115px;
+    top: 140px;
+    width: 150px;
+    height: 150px;
+}
+
+
+.show:hover .door-left {
+    transform: rotateY(-140deg);
+}
+
+.show:hover .door-right {
+    transform: rotateY(140deg);
+}
 
 tr {
     width: 25px;
