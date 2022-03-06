@@ -11,7 +11,7 @@
    
    .door-left {
        background-image: url('Imagens/quadro-half-left.png');
-       background-repeat: round;
+       background-size: cover;
        width: 156px;
        height: 337px;
        transition: transform 2.5s;
@@ -21,7 +21,7 @@
    
    .door-right {
        background-image: url('Imagens/quadro-half-right.png');
-       background-repeat: round;
+       background-size: cover;
        width: 156px;
        height: 337px;
        transition: transform 2.5s;

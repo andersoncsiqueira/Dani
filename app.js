@@ -24,6 +24,9 @@ let table = document.querySelector('table')
 let show = document.querySelector('#show')
 let orientations = document.querySelector('#orientation')
 let stars = document.querySelector('#containStars')
+let main = document.querySelector('main')
+let imgEnd = document.querySelector('#end')
+let allButtons = document.querySelectorAll('button')
 const baloesAll = document.querySelectorAll('.baloesAll')
 
 let counter = 0
@@ -81,22 +84,31 @@ const settime = setInterval(()=>{
     
     let clicado = Array.from(lettle).filter(item => item.classList.contains('selectClick'))
     
-    if(clicado.length === 63 ) {
+    if(clicado.length === 3 ) {
+       
         clearInterval(settime)
-        table.classList.toggle('img-off')
-        show.classList.toggle('img-off')
-        show.classList.toggle('show')
-        show.classList.add('showAnimation') 
-        orientations.classList.add('orientation')
-        orientations.textContent = 'Clique no quadro!!'
-        stars.classList.add('img-off') 
+
+        setTimeout(() => {
+            table.classList.toggle('img-off')
+            show.classList.toggle('img-off')
+            show.classList.toggle('show')
+            show.classList.add('showAnimation') 
+            orientations.classList.add('orientation')
+            orientations.textContent = 'Clique no quadro!!'
+            stars.classList.add('img-off') 
+
+        },2000)
               
     }
 
 },1)
 
 
-console.log(orientations.textContent)
+let buttons = Array.from(allButtons)
 
-
-
+buttons.forEach(button => {
+    button.addEventListener('click', event => {
+        main.classList.add('img-off')
+        imgEnd.classList.toggle("img-off")
+    })
+})

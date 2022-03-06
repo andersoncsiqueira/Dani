@@ -16,7 +16,7 @@ main {
 
 table {
     background: white;
-    margin: 50px 32.5px 50px 32.5px;
+    margin: 30px 32.5px 50px 32.5px;
     border-collapse: collapse;
     box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
 }
@@ -38,14 +38,14 @@ th {
 }
 
 h1 {
-    margin: 5px;
+    margin-top: 25px;
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
     color: rgb(54, 9, 17);
 }
 
 h3 {
-    margin: 15px;
+    margin: 5px;
     font-family: 'Sansita Swashed', cursive;
     text-align: center;
 }
@@ -54,7 +54,7 @@ h3 {
                         /* classes */ 
 
 .stars {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
