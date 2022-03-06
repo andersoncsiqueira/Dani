@@ -46,9 +46,12 @@
    }
 
    .botoes span {
-       margin: 60px;
+       margin: 50px;
        background-color: beige;
        padding: 5px;
+       color: rgb(241, 81, 228);
+       font-weight: bold;
+       border-radius: 5px;
    }
 
    .botoes div {
@@ -57,13 +60,18 @@
        align-items: center;
        margin-top: 10px;
        
+       
    }
 
    .botoes button {
        margin: 5px;
-       height: 25px;
+       height: 30px;
        font-size: 15px;
        padding: 5px 5px 5px 5px;
+       border-radius: 5px;
+       text-align: justify;
+       background-color: rgb(241, 81, 228);
+       color: aliceblue;
    }
 
    

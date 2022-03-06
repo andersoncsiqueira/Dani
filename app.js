@@ -22,6 +22,8 @@ let imgPerfeita2 = document.querySelector('#perfeita2')
 
 let table = document.querySelector('table')
 let show = document.querySelector('#show')
+let orientations = document.querySelector('#orientation')
+let stars = document.querySelector('#containStars')
 const baloesAll = document.querySelectorAll('.baloesAll')
 
 let counter = 0
@@ -79,16 +81,22 @@ const settime = setInterval(()=>{
     
     let clicado = Array.from(lettle).filter(item => item.classList.contains('selectClick'))
     
-    if(clicado.length === 3 ) {
+    if(clicado.length === 63 ) {
         clearInterval(settime)
         table.classList.toggle('img-off')
         show.classList.toggle('img-off')
         show.classList.toggle('show')
-        show.classList.add('showAnimation')        
+        show.classList.add('showAnimation') 
+        orientations.classList.add('orientation')
+        orientations.textContent = 'Clique no quadro!!'
+        stars.classList.add('img-off') 
+              
     }
 
 },1)
 
+
+console.log(orientations.textContent)
 
 
 
