@@ -14,11 +14,22 @@ main {
     width: 400px;
 }
 
+.all {
+    width: 312px;
+    height: 337px;
+}
+
+.wrappertable {
+    display: flex;
+    position: absolute;
+}
+
 table {
     background: white;
-    margin: 30px 32.5px 50px 32.5px;
+    margin: 0;
     border-collapse: collapse;
     box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
+
 }
  
 
@@ -50,6 +61,10 @@ h3 {
     text-align: center;
 }
 
+
+#orientation {
+    margin-top: 30px;
+}
 
                         /* classes */ 
 

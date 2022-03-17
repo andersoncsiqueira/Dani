@@ -3,30 +3,36 @@
     display: flex;
     width: 312px;
     height: 337px;
-    margin: 50px 32.5px 50px 32.5px;
+    
     background: white;
     box-shadow: rgba(0, 0, 0, 0.315) 5px 14px;
                                     
    }
    
    .door-left {
-       background-image: url('Imagens/quadro-half-left.png');
-       background-size: cover;
+       
        width: 156px;
        height: 337px;
        transition: transform 2.5s;
        transform-origin: left;
-       z-index: 1;
+       z-index: 10;
+       animation-name: doorleft;
+       animation-duration: 3s;
+       animation-fill-mode: forwards;
+
    }
    
    .door-right {
-       background-image: url('Imagens/quadro-half-right.png');
-       background-size: cover;
+       
        width: 156px;
        height: 337px;
        transition: transform 2.5s;
        transform-origin: right;
-       z-index: 1;
+       z-index: 10;
+       animation-name: doorright;
+       animation-duration: 3s;
+       animation-fill-mode: forwards;
+       
    }
    
    .contain-baloes {
@@ -85,65 +91,26 @@
        height: 150px;
    }
    
-   #baloes1 {
-       position: absolute;
-       left: 50px;
-       top: 170px;
-      width: 150px;
-        height: 150px;
-    }
-    
-    #baloes2 {
-        position: absolute;
-        left: 80px;
-        top: 120px;
-        rotate: 30deg;
-        width: 150px;
-        height: 150px;
-    }
-    
-    #baloes3 {
-        position: absolute;
-        left: 16px;
-        top: 110px;
-       width: 150px;
-       height: 150px;
-   }
    
-   #baloes4 {
-       position: absolute;
-       left: 199px;
-       top: 190px;       
-       width: 150px;
-       height: 150px;
-   }
-   
-   #baloes5 {
-       position: absolute;
-       left: 75px;
-       top: 200px;
-       width: 150px;      
-        height: 150px;
-
-   }
         
-        #baloes6 {
-            position: absolute;
-            left: 115px;
-            top: 140px;
-            width: 150px;
-            height: 150px;
+        @keyframes doorleft {
+           
+            from { transform: rotateY(0deg);}
+            to { transform: rotateY(-140deg);}
+        
+            
         }
+
         
-        .show:hover .door-left {
-            transform: rotateY(-140deg);
+        @keyframes doorright {
+           
+            from { transform: rotateY(0deg);}
+            to { transform: rotateY(140deg);}
         
             
         }
         
-        .show:hover .door-right  {
-            transform: rotateY(140deg);
-        }
+        
 
         .show:hover #baloes {
             transform: translatex(-250px) translateY(-100px);

@@ -27,6 +27,9 @@ let stars = document.querySelector('#containStars')
 let main = document.querySelector('main')
 let imgEnd = document.querySelector('#end')
 let allButtons = document.querySelectorAll('button')
+let doorLeft = document.querySelector('#doorleft')
+let doorRight = document.querySelector('#doorright')
+
 const baloesAll = document.querySelectorAll('.baloesAll')
 
 let counter = 0
@@ -89,10 +92,12 @@ const settime = setInterval(()=>{
         clearInterval(settime)
 
         setTimeout(() => {
-            table.classList.toggle('img-off')
+           // table.classList.toggle('img-off')
             show.classList.toggle('img-off')
             show.classList.toggle('show')
             show.classList.add('showAnimation') 
+            doorLeft.classList.add('door-left')
+            doorRight.classList.add('door-right')
             orientations.classList.add('orientation')
             orientations.textContent = 'Clique no quadro!!'
             stars.classList.add('img-off') 
