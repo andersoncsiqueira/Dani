@@ -87,7 +87,7 @@ const settime = setInterval(()=>{
     
     let clicado = Array.from(lettle).filter(item => item.classList.contains('selectClick'))
     
-    if(clicado.length === 3 ) {
+    if(clicado.length === 63 ) {
        
         clearInterval(settime)
 
@@ -98,7 +98,7 @@ const settime = setInterval(()=>{
             show.classList.add('showAnimation') 
             doorLeft.classList.add('door-left')
             doorRight.classList.add('door-right')
-            orientations.classList.add('orientation')
+            orientations.classList.add('img-off')
             orientations.textContent = 'Clique no quadro!!'
             stars.classList.add('img-off') 
 

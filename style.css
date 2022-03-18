@@ -11,7 +11,7 @@ body {
 
 main {
     display: block;
-    width: 400px;
+    width: 312px;
 }
 
 .all {
@@ -22,6 +22,8 @@ main {
 .wrappertable {
     display: flex;
     position: absolute;
+    width: 312px;
+    height: 337px;
 }
 
 table {
@@ -49,7 +51,7 @@ th {
 }
 
 h1 {
-    margin-top: 25px;
+    margin-top: 5px;
     text-align: center;
     font-family: 'Sansita Swashed', cursive;
     color: rgb(54, 9, 17);
@@ -81,9 +83,6 @@ h3 {
     height: 60px;
 }
 
-.select {
-   
-}
 
 .selectClick {
     background: red;
